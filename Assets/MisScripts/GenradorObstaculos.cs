@@ -3,11 +3,13 @@ using System.Collections;
 
 public class GenradorObstaculos : MonoBehaviour {
 
-    public GameObject obstaculoNave;
+    public GameObject objetoGenerar;
     public float velocidadGenerador;
+    public float velocidadInicialGenerador;
+    public float velocidadEstandarizadaObstaculos;
 	// Use this for initialization
 	void Start () {
-        InvokeRepeating("GenerarObstaculos",1,4);
+        InvokeRepeating("GenerarObstaculos",velocidadInicialGenerador,velocidadEstandarizadaObstaculos);
 	}
 	
 	// Update is called once per frame
@@ -16,6 +18,9 @@ public class GenradorObstaculos : MonoBehaviour {
 	}
 
     void GenerarObstaculos() {
-        Instantiate(obstaculoNave,transform.position, Quaternion.identity);
+        if (objetoGenerar!=null)
+        {
+            Instantiate(objetoGenerar,transform.position, Quaternion.identity);
+        }
     }
 }

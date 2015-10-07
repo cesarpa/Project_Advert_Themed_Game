@@ -12,7 +12,7 @@ public class BackgroundParallax : MonoBehaviour
 	private Transform cam;						// Shorter reference to the main camera's transform.
 	private Vector3 previousCamPos;				// The postion of the camera in the previous frame.
 
-
+    
 	void Awake ()
 	{
 		// Setting up the reference shortcut.
