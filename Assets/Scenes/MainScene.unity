@@ -115,9 +115,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objetoGenerar: {fileID: 100046, guid: ed5592612cca943c4ab5a2773166e924, type: 2}
-  velocidadGenerador: 10
-  velocidadInicialGenerador: 1
-  velocidadEstandarizadaObstaculos: 4
+  velocidadGenerador: 15
+  velocidadInicialGenerador: 0
+  velocidadEstandarizadaObstaculos: 3
 --- !u!4 &15950483
 Transform:
   m_ObjectHideFlags: 0
@@ -233,7 +233,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 11
+  orthographic size: 18
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -472,25 +472,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ed5592612cca943c4ab5a2773166e924, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &1105928841 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 175942, guid: 135e2efa99da3b74f98f00e740747e81, type: 2}
-  m_PrefabInternal: {fileID: 1324058304}
---- !u!114 &1105928851
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1105928841}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7450fb6e46ea99459b3cb1abc4f47c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objetoGenerar: {fileID: 0}
-  velocidadGenerador: 0
-  velocidadInicialGenerador: 0
-  velocidadEstandarizadaObstaculos: 0
 --- !u!1001 &1324058304
 Prefab:
   m_ObjectHideFlags: 0
