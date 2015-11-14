@@ -45,7 +45,8 @@ public class Enemy : MonoBehaviour
 		}
 
 		// Set the enemy's velocity to moveSpeed in the x direction.
-		GetComponent<Rigidbody2D>().velocity = new Vector2(transform.localScale.x * moveSpeed, GetComponent<Rigidbody2D>().velocity.y);	
+		//GetComponent<Rigidbody2D>().velocity = new Vector2(transform.localScale.x * moveSpeed, GetComponent<Rigidbody2D>().velocity.y);	
+		GetComponent<Rigidbody2D>().velocity = new Vector2((transform.localScale.x * moveSpeed)*-1, GetComponent<Rigidbody2D>().velocity.y);//PARA DEJAR QUE EL ENEMIGO CORRA DE DERECHO A IZQUIERDA 14-11-2015-JFA	
 
 		// If the enemy has one hit point left and has a damagedEnemy sprite...
 		if(HP == 1 && damagedEnemy != null)
